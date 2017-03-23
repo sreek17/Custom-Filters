@@ -1,0 +1,20 @@
+<html ng-app='firstApplication'>
+<head>
+    
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app_filter.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <body>
+        
+     <div ng-controller="people">
+        Number:<input type="text" ng-model="number"><br>
+         Base: <input type="text" ng-model="baseNumber"><br>
+         Your number entered is {{number}} for the base is {{baseNumber}} 
+         is {{number|base:baseNumber}}
+         
+           
+    </div>
+        
+    </body>
+</html>
